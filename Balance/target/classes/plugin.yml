@@ -1,0 +1,4 @@
+name: Balance
+version: '1.0-SNAPSHOT'
+main: org.Morkovcheto.balance.Balance
+api-version: '1.21'
