@@ -6,7 +6,6 @@ public final class Balance extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        getLogger().info("Hello Bloody World!");
         // Plugin startup logic
 
     }
@@ -15,4 +14,9 @@ public final class Balance extends JavaPlugin {
     public void onDisable() {
         // Plugin shutdown logic
     }
+
+    public static JavaPlugin getInstance() {
+        return getPlugin(Balance.class);
+    }
+
 }
