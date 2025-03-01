@@ -20,12 +20,8 @@ public class BalanceCommand implements CommandExecutor, TabExecutor {
             commandSender.sendMessage("Only players can use this command!");
         }
         int balance = 0;
-        try {
-            getLogger().info(String.valueOf(balance));
-        } catch (SyncFactoryException e) {
-            throw new RuntimeException(e);
-        }
-        return false;
+        commandSender.sendMessage(String.valueOf(balance));
+        return true;
     }
 
     @Override
