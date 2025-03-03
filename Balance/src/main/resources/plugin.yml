@@ -2,3 +2,10 @@ name: Balance
 version: '1.0-SNAPSHOT'
 main: org.Morkovcheto.balance.Balance
 api-version: '1.21'
+commands:
+  balance:
+    description: "This is command show a player's in-game balance!"
+    usage: "/balance"
+    aliases: [balance, blnc]
+    permission: permission.node
+    permission-message: "You do not have permission to use this command"
